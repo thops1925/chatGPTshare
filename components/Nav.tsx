@@ -13,15 +13,12 @@ const Nav = () => {
 	console.log(session);
 
 	const [provider, setProvider] = useState(null);
+	console.log(provider);
 
 	useEffect(() => {
-		const setProvid = async () => {
+		async () => {
 			const response: any = await getProviders();
 			setProvider(response);
-		};
-
-		return () => {
-			setProvid();
 		};
 	}, []);
 

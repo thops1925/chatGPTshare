@@ -11,7 +11,7 @@ type Props = {
 
 const DesktopNav = ({ provider, signOut, signIn }: Props) => {
 	const login = true;
-
+	console.log(provider);
 	return (
 		<div className='sm:flex hidden'>
 			{provider?.user ? (
@@ -36,18 +36,11 @@ const DesktopNav = ({ provider, signOut, signIn }: Props) => {
 				</div>
 			) : (
 				<>
-					{/* {provider &&
-						Object.values(provider).map((provider: any) => (
-							<button
-								type='button'
-								key={provider.name}
-								onClick={() => signIn(provider.id)}
-								className='text-white rounded-full bg-black px-5 py-3 font-bold tracking-wide h-12'>
-								Sign In
-							</button>
-						))} */}
-
-					<button onClick={() => signIn()} className='text-white rounded-full bg-black px-5 py-3 font-bold tracking-wide h-12'>
+					<button
+						type='button'
+						key={provider?.user.name}
+						onClick={() => signIn(provider?.user?.id)}
+						className='text-white rounded-full bg-black px-5 py-3 font-bold tracking-wide h-12'>
 						Sign In
 					</button>
 				</>
