@@ -74,3 +74,12 @@ interface OAuthConfig {
 	 */
 	style: ProviderStyleType;
 }
+
+interface Session {
+	user: {
+		name: string;
+		email: string;
+		image: string;
+		id: string;
+	} & DefaultSession['user'];
+}

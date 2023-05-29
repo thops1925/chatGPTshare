@@ -10,10 +10,8 @@ import { getProviders, signIn, signOut, useSession } from 'next-auth/react';
 
 const Nav = () => {
 	const { data: session } = useSession();
-	console.log(session);
 
 	const [provider, setProvider] = useState(null);
-	console.log(provider);
 
 	useEffect(() => {
 		async () => {

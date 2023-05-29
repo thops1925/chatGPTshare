@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        cookie: ['Cookie', 'cursive']
       },
       colors: {
         'primary-orange': '#FF5722',

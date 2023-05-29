@@ -1,9 +1,6 @@
 import Nav from '@components/Nav';
 import { Provider } from '@components/Provider';
 import '@styles/globals.css';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
 	title: 'Share',
@@ -13,10 +10,10 @@ export const metadata = {
 const RootLayout = ({ children }: any) => {
 	return (
 		<html lang='eng'>
-			<body className='max-w-7xl mx-auto bg-gray-200	'>
+			<body className='max-w-7xl mx-auto bg-gray-200 '>
 				<Provider>
 					<Nav />
-					<main className={`${inter} antialiased`}>{children}</main>
+					<main className='antialiased font-font-satoshi'>{children}</main>
 				</Provider>
 			</body>
 		</html>

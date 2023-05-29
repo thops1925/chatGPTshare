@@ -6,7 +6,7 @@ const Home = () => {
 		<section className='flex justify-center  items-center flex-col '>
 			<div className=''>
 				<Image src={logo} alt='logo' className='blur-0 object-contain' />
-				<h1 className='text-5xl font-bold  text-center mt-5'>Promps</h1>
+				<h1 className='text-7xl font-bold text-center mt-5 tracking-wider'>Promps</h1>
 			</div>
 			<Feed />
 		</section>

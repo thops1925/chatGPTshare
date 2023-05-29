@@ -10,8 +10,6 @@ type Props = {
 };
 
 const DesktopNav = ({ provider, signOut, signIn }: Props) => {
-	const login = true;
-	console.log(provider);
 	return (
 		<div className='sm:flex hidden'>
 			{provider?.user ? (
