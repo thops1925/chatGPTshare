@@ -75,11 +75,11 @@ interface OAuthConfig {
 	style: ProviderStyleType;
 }
 
-interface Session {
+interface usersT {
 	user: {
 		name: string;
 		email: string;
 		image: string;
 		id: string;
-	} & DefaultSession['user'];
+	};
 }

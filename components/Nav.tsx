@@ -12,6 +12,7 @@ const Nav = () => {
 	const { data: session } = useSession();
 
 	const [provider, setProvider] = useState(null);
+	// console.log(provider);
 
 	useEffect(() => {
 		async () => {

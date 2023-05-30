@@ -33,7 +33,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }: Props) => {
 				<label>
 					<span className='font-satoshi font-semibold text-base text-gray-700 '>Tag </span>
 					<input
-						value={post.prompt}
+						value={post.tag}
 						onChange={(e) => setPost({ ...post, tag: e.target.value })}
 						required
 						className=' font-satoshi  w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0'
