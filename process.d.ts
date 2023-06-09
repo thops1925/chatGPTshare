@@ -15,3 +15,14 @@ declare namespace NodeJS {
 		MONGODB_URL: string;
 	}
 }
+
+/* Not sure if this is needed. */
+// declare module 'next-auth' {
+//   export interface Session {
+//     uid: string
+//   }
+// }
+
+export interface Session {
+	id: string;
+}
